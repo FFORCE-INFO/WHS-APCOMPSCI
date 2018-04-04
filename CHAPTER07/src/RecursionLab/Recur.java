@@ -1,0 +1,87 @@
+	//Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
+	//version 9.2.2003
+package RecursionLab;
+   import javax.swing.JOptionPane;
+   public class Recur
+   {
+      public static void main(String[] args)
+      {
+         long number;
+         int num, response = 1;
+         char ch;
+         do
+         { 
+            edu.fcps.Utilities.cls();
+            System.out.print("Make a selection" + "\n");
+            System.out.print("    (1) Letters" + "\n");
+            System.out.print("    (2) Number of factors of two" + "\n");
+            System.out.print("    (3) Perfect power of three?" + "\n");
+            System.out.print("    (4) Reverse a number" + "\n");
+            System.out.print("    (5) Change to base 5" + "\n");
+            System.out.print("    (6) Print with Commas" + "\n");
+            System.out.print("    (0) To quit" + "\n");
+            response = Integer.parseInt(JOptionPane.showInputDialog("Enter a number:"));
+            System.out.println();
+            switch (response)
+            {
+               case 1 : ch = JOptionPane.showInputDialog("Enter a lower case letter: ").charAt(0);
+                  letters (ch); 
+                  break;
+               case 2 : num = Integer.parseInt(JOptionPane.showInputDialog("How many factors of 2 in what number?  "));
+                  System.out.print("There are " + twos(num) + " factors of two in "
+                                  + num + "\n"); 
+                  break;
+               case 3 : num = Integer.parseInt(JOptionPane.showInputDialog("Perfect power of 3?  What positive integer? "));
+                  System.out.print(num + " is ");
+                  if ( ! powerOfThree(num))
+                     System.out.print("not ");
+                  System.out.print("a perfect power of three. " + "\n"); 
+                  break;
+               case 4 : number = Integer.parseInt(JOptionPane.showInputDialog("What integer to reverse? "));
+                  System.out.print("The number " + number + " reversed is " );
+                  System.out.println(reverse(number));
+                  System.out.println(); 
+                  break;
+               case 5 : num = Integer.parseInt(JOptionPane.showInputDialog("Change what number to base 5? "));
+                  System.out.print(num + " written in base 5 is ");
+                  base5(num);
+                  System.out.println(); 
+                  break;
+               case 6 : number = Integer.parseInt(JOptionPane.showInputDialog("What number to print with commas? "));
+                  printWithCommas(  );
+                  System.out.println(); 
+                  break;
+               case 0:
+                  System.out.println("Good-bye.");
+                  System.exit(0);
+                  break;
+               default : ;
+            } // switch
+            System.out.println("\n\nHit any key to continue.");
+            edu.fcps.Utilities.getch();
+         }while (response > 0);
+         System.out.println("Negative.");
+         System.exit(0);
+      }
+      public static void letters(char ch)
+      {
+      }
+      public static int twos (int num)
+      {
+         return -1;
+      }
+      public static boolean powerOfThree (int num)
+      {
+         return true;
+      }
+      public static long reverse (long number)
+      {
+         return -1;
+      }
+      public static void base5 (int num)
+      {
+      }
+      public static void printWithCommas (   )
+      {
+      }
+   }

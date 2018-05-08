@@ -1,3 +1,5 @@
+package activity_2;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -30,6 +32,15 @@ public class Deck {
 	 * @param values is an array containing all of the card point values.
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
+		cards = new ArrayList<Card>();
+		
+		for(int i = 0; i < suits.length; i++) {
+			for(int j = 0; j < ranks.length; j++) {
+				cards.add(new Card(ranks[j], suits[i], values[j]));
+			}
+		}
+		size = cards.size();
+		shuffle();
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 
@@ -39,6 +50,12 @@ public class Deck {
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
+		if(size == 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 
@@ -47,6 +64,7 @@ public class Deck {
 	 * @return the number of undealt cards in this deck.
 	 */
 	public int size() {
+		return size;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 
@@ -64,6 +82,13 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
+		if(0 < size) {
+			size --;
+			return cards.get(size);
+		}
+		else {
+			return null;
+		}
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 

@@ -1,3 +1,5 @@
+package activity_2;
+
 /**
  * Card.java
  *

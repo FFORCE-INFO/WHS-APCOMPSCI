@@ -11,3 +11,13 @@ J
 activity_2/DeckTester.java,0\9\09d5c2cb1132d874427978f193b7196ad506dc16
 H
 activity_3/Shuffler.java,7\f\7fb98a1da5f36a1ccee42b1d9cf721fa9e498242
+O
+activity_6/META-INF/MANIFEST.MF,9\7\97949e98048f26a82a4fddb5ab5226a3bb39c952
+G
+activity_6/cards/JO.GIF,1\0\10a6060c08e286795eef15665f3546aac57a4e83
+H
+activity_6/cards/JOS.GIF,f\2\f22b5b9838bc8ffbffb493991944756ff393fa12
+N
+activity_6/cards/kingclubs.GIF,9\2\926b1f87c96745cdbfcf32afa633778104caa5d3
+O
+activity_6/cards/kingclubsS.GIF,5\a\5a711660ecba0c81068049a5220fa22cf91f3ea8

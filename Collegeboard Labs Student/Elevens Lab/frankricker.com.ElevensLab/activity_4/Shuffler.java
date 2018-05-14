@@ -1,4 +1,4 @@
-package activity_3;
+package activity_4;
 import java.util.*;
 /**
  * This class provides a convenient way to test shuffling methods.

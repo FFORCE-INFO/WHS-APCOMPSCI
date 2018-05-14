@@ -1,7 +1,7 @@
 
-Gsquid:S1220""Move this file to a named package.H–RMINORZ
+squid:S1488c"YImmediately return this expression instead of assigning it to the temporary variable "s".(ôº¡¨8ôä¼³,HÏRMINORZ
 CODE_SMELL
-zsquid:S1126O"AReplace this if-then-else statement by a single return statement.(æÔ¯ıÿÿÿÿ8ôä¼³,HšRMINORZ
+zsquid:S1126O"AReplace this if-then-else statement by a single return statement.(æÔ¯ıÿÿÿÿ8ôä¼³,HĞRMINORZ
 CODE_SMELL
-squid:S1488c"YImmediately return this expression instead of assigning it to the temporary variable "s".(ôº¡¨8ôä¼³,H›RMINORZ
+Gsquid:S1220""Move this file to a named package.HÑRMINORZ
 CODE_SMELL

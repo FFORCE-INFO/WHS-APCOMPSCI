@@ -1,3 +1,4 @@
+package activity_4;
 /**
  * Card.java
  *
@@ -5,6 +6,7 @@
  */
 public class Card {
 
+		
 	/**
 	 * String value that holds the suit of the card
 	 */

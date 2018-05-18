@@ -50,21 +50,17 @@ public class Deck {
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
-		if(size == 0) {
-			return true;
-		}
-		else {
-			return false;
-		}
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		return this.size == 0;
 	}
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+
 
 	/**
 	 * Accesses the number of undealt cards in this deck.
 	 * @return the number of undealt cards in this deck.
 	 */
 	public int size() {
-		return size;
+		return this.size;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 
@@ -82,13 +78,12 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		if(0 < size) {
-			size --;
-			return cards.get(size);
-		}
-		else {
-			return null;
-		}
+	    if (isEmpty()) {
+	        return null;
+	      }
+	      this.size -= 1;
+	      Card card = (Card)this.cards.get(this.size);
+	      return card;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 
@@ -98,32 +93,29 @@ public class Deck {
 	 */
 	@Override
 	public String toString() {
-		String rtn = "size = " + size + "\nUndealt cards: \n";
-
-		for (int k = size - 1; k >= 0; k--) {
-			rtn = rtn + cards.get(k);
-			if (k != 0) {
-				rtn = rtn + ", ";
-			}
-			if ((size - k) % 2 == 0) {
-				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
-			}
-		}
-
-		rtn = rtn + "\nDealt cards: \n";
-		for (int k = cards.size() - 1; k >= size; k--) {
-			rtn = rtn + cards.get(k);
-			if (k != size) {
-				rtn = rtn + ", ";
-			}
-			if ((k - cards.size()) % 2 == 0) {
-				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
-			}
-		}
-
-		rtn = rtn + "\n";
-		return rtn;
+	    String str = "size = " + this.size + "\nUndealt cards: \n";
+	    for (int i = this.size - 1; i >= 0; i--)
+	    {
+	      str = str + this.cards.get(i);
+	      if (i != 0) {
+	        str = str + ", ";
+	      }
+	      if ((this.size - i) % 2 == 0) {
+	        str = str + "\n";
+	      }
+	    }
+	    str = str + "\nDealt cards: \n";
+	    for (int i = this.cards.size() - 1; i >= this.size; i--)
+	    {
+	      str = str + this.cards.get(i);
+	      if (i != this.size) {
+	        str = str + ", ";
+	      }
+	      if ((i - this.cards.size()) % 2 == 0) {
+	        str = str + "\n";
+	      }
+	    }
+	    str = str + "\n";
+	    return str;
 	}
 }

@@ -35,9 +35,9 @@ public class Card {
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		//initializes a new Card with the given rank, suit, and point value
-		rank = cardRank;
-		suit = cardSuit;
-		pointValue = cardPointValue;
+		this.rank = cardRank;
+		this.suit = cardSuit;
+		this.pointValue = cardPointValue;
 	}
 
 
@@ -46,7 +46,7 @@ public class Card {
 	 * @return this <code>Card's</code> suit.
 	 */
 	public String suit() {
-		return suit;
+		return this.suit;
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class Card {
 	 * @return this <code>Card's</code> rank.
 	 */
 	public String rank() {
-		return rank;
+		return this.rank;
 	}
 
    /**
@@ -62,7 +62,7 @@ public class Card {
 	 * @return this <code>Card's</code> point value.
 	 */
 	public int pointValue() {
-		return pointValue;
+		return this.pointValue;
 	}
 
 	/** Compare this card with the argument.
@@ -89,6 +89,6 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		return rank + " of " + suit + " (point value = " + pointValue + ")";
+		return this.rank + " of " + this.suit + " (point value = " + this.pointValue + ")";
 	}
 }

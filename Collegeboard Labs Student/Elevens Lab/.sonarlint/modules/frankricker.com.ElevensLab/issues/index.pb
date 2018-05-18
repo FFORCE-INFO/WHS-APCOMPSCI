@@ -21,3 +21,11 @@ N
 activity_6/cards/kingclubs.GIF,9\2\926b1f87c96745cdbfcf32afa633778104caa5d3
 O
 activity_6/cards/kingclubsS.GIF,5\a\5a711660ecba0c81068049a5220fa22cf91f3ea8
+D
+activity_4/Card.java,2\0\20f33d8db51b79a09b6bb3fd62d4e771d3f5024c
+H
+activity_4/Shuffler.java,8\a\8a7e93fb4ca2380b07ac3980c2798645a3282185
+J
+activity_4/DeckTester.java,6\c\6ca8bce26551da447cb9924cd05cfa918ea5a491
+D
+activity_4/Deck.java,9\8\98f78ed46c5dac40314b8e656eacfebde3239ec7

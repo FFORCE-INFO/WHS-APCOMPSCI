@@ -1,3 +1,18 @@
 
-Gsquid:S1220""Move this file to a named package.HÂRMINORZ
+l
+squid:S106""9Replace this use of System.out or System.err by a logger.(Âˆïí8åïÒëµ,H¹RMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(‹Èñ¼8åïÒëµ,HºRMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(Âˆïí8åïÒëµ,H»RMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8åïÒëµ,H¼RMAJORZ
+CODE_SMELL
+k
+squid:S106!"9Replace this use of System.out or System.err by a logger.(Ä­æ[8åïÒëµ,H½RMAJORZ
+CODE_SMELL
+”squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ş„Ìşÿÿÿÿ8åïÒëµ,H¶RMINORZ
 CODE_SMELL

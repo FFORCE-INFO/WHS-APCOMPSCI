@@ -1,0 +1,25 @@
+
+Isquid:S1643x"Use a StringBuilder instead.(°´ĞƒHíRMINORZ
+CODE_SMELL
+’squid:S2293D"YReplace the type specification in this constructor call with the diamond operator ("<>").(Âş¬Éüÿÿÿÿ8ò›³ëµ,HöRMINORZ
+CODE_SMELL
+Isquid:S1643l"Use a StringBuilder instead.(°´ĞƒHëRMINORZ
+CODE_SMELL
+Isquid:S1643j"Use a StringBuilder instead.(Ÿã†±HìRMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(À®ÍĞ8—¯´ëµ,HúRMINORZ
+CODE_SMELL
+‹squid:S1488]"YImmediately return this expression instead of assigning it to the temporary variable "c".(öØÀ²ÿÿÿÿÿHòRMINORZ
+CODE_SMELL
+Nsquid:S1643p"Use a StringBuilder instead.(á­Ä”ıÿÿÿÿHğRMINORZ
+CODE_SMELL
+Isquid:S1643v"Use a StringBuilder instead.(Ÿã†±HïRMINORZ
+CODE_SMELL
+‹squid:S00117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßĞÑŠÿÿÿÿÿ8ò›³ëµ,HøRMINORZ
+CODE_SMELL
+†squid:S2293#"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÚŸÍïHñRMINORZ
+CODE_SMELL
+‹squid:S00117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âş¬Éüÿÿÿÿ8ò›³ëµ,H÷RMINORZ
+CODE_SMELL
+Nsquid:S1643|"Use a StringBuilder instead.(á­Ä”ıÿÿÿÿHîRMINORZ
+CODE_SMELL

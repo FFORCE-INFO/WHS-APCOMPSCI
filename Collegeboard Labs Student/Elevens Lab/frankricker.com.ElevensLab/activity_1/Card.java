@@ -46,7 +46,7 @@ public class Card {
 	 * @return this <code>Card's</code> suit.
 	 */
 	public String suit() {
-		return suit;
+		return this.suit;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
    }
 
@@ -55,7 +55,7 @@ public class Card {
 	 * @return this <code>Card's</code> rank.
 	 */
 	public String rank() {
-		return rank;
+		return this.rank;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 	}
 
@@ -64,7 +64,7 @@ public class Card {
 	 * @return this <code>Card's</code> point value.
 	 */
 	public int pointValue() {
-		return pointValue;
+		return this.pointValue;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 	}
 
@@ -96,7 +96,7 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		String s = "" + rank + " of " + suit + " (point value = " + pointValue + ")";
+		String s = "" + this.rank + " of " + this.suit + " (point value = " + this.pointValue + ")";
 		return s;
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 	}

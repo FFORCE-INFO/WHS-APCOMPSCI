@@ -1,6 +1,9 @@
 package activity_4;
 
 import java.util.List;
+
+import activity_2.Card;
+
 import java.util.ArrayList;
 
 /**
@@ -33,9 +36,10 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		cards = new ArrayList<Card>();
-		for (int j = 0; j < ranks.length; j++) {
-			for (String suitString : suits) {
-				cards.add(new Card(ranks[j], suitString, values[j]));
+		
+		for(int i = 0; i < suits.length; i++) {
+			for(int j = 0; j < ranks.length; j++) {
+				cards.add(new Card(ranks[j], suits[i], values[j]));
 			}
 		}
 		size = cards.size();
@@ -48,7 +52,7 @@ public class Deck {
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
-		return size == 0;
+		return this.size == 0;
 	}
 
 	/**
@@ -56,7 +60,7 @@ public class Deck {
 	 * @return the number of undealt cards in this deck.
 	 */
 	public int size() {
-		return size;
+		return this.size;
 	}
 
 	/**
@@ -64,19 +68,16 @@ public class Deck {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
-		size = cards.size();
-		ArrayList<Card> _Cards = new ArrayList<Card>();
-		for(Card c : cards) {
-			_Cards.add(c);
-		}
-		int[] _cards = new int[size];
-		for(int i = 0; i < size; i++) {
-			_cards[i] = i;
-		}
-		Shuffler.selectionShuffle(_cards);
-		for(int i = 0; i < size; i ++) {
-			cards.set(_cards[i], _Cards.get(i));
-		}
+	    for (int i = this.cards.size() - 1; i > 0; i--)
+	    {
+	      int j = i + 1;
+	      int k = 0;
+	      int m = (int)(Math.random() * j) + k;
+	      Card localCard = (Card)this.cards.get(i);
+	      this.cards.set(i, this.cards.get(m));
+	      this.cards.set(m, localCard);
+	    }
+	    this.size = this.cards.size();
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
 	}
 
@@ -86,12 +87,12 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		if (isEmpty()) {
-			return null;
-		}
-		size--;
-		Card c = cards.get(size);
-		return c;
+	    if (isEmpty()) {
+	        return null;
+	      }
+	      this.size -= 1;
+	      Card card = (Card)this.cards.get(this.size);
+	      return card;
 	}
 
 	/**
@@ -100,32 +101,29 @@ public class Deck {
 	 */
 	@Override
 	public String toString() {
-		String rtn = "size = " + size + "\nUndealt cards: \n";
-
-		for (int k = size - 1; k >= 0; k--) {
-			rtn = rtn + cards.get(k);
-			if (k != 0) {
-				rtn = rtn + ", ";
-			}
-			if ((size - k) % 2 == 0) {
-				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
-			}
-		}
-
-		rtn = rtn + "\nDealt cards: \n";
-		for (int k = cards.size() - 1; k >= size; k--) {
-			rtn = rtn + cards.get(k);
-			if (k != size) {
-				rtn = rtn + ", ";
-			}
-			if ((k - cards.size()) % 2 == 0) {
-				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
-			}
-		}
-
-		rtn = rtn + "\n";
-		return rtn;
+	    String str = "size = " + this.size + "\nUndealt cards: \n";
+	    for (int i = this.size - 1; i >= 0; i--)
+	    {
+	      str = str + this.cards.get(i);
+	      if (i != 0) {
+	        str = str + ", ";
+	      }
+	      if ((this.size - i) % 2 == 0) {
+	        str = str + "\n";
+	      }
+	    }
+	    str = str + "\nDealt cards: \n";
+	    for (int i = this.cards.size() - 1; i >= this.size; i--)
+	    {
+	      str = str + this.cards.get(i);
+	      if (i != this.size) {
+	        str = str + ", ";
+	      }
+	      if ((i - this.cards.size()) % 2 == 0) {
+	        str = str + "\n";
+	      }
+	    }
+	    str = str + "\n";
+	    return str;
 	}
 }
